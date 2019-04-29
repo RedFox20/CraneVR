@@ -6,7 +6,10 @@ public class CraneVR : ModuleRules
 	public CraneVR(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
+        bFasterWithoutUnity = true;
+        bEnforceIWYU = true;
+	    bPrecompile = false;
+
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
